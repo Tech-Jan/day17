@@ -8,7 +8,7 @@ class QuizBrain:
         score = 0
         for question in self.question_list:
             self.question_number += 1
-            if input(f"Q.{self.question_number}: {question.text} [True or False] ") == question.answer:
+            if input(f"Q. {self.question_number}: {question.text} [True or False] ") == question.answer:
                 score += 1
                 print(f"gj \nThe Correct answer was {question.answer}\n your score is {score}/{self.question_number}")
             else:
